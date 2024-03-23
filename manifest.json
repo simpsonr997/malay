@@ -1,0 +1,30 @@
+{
+	"lang": "en",
+	"name": "Prominton",
+	"scope": "/",
+	"display": "standalone",
+	"start_url": "/",
+	"short_name": "Prominton",
+	"theme_color": "#000000",
+	"orientation": "portrait",
+	"background_color": "#18191c",
+	"related_applications": [],	      
+    "description": "Live Streaming Badminton",
+	"serviceworker": {
+        "src": "/",
+        "scope": "/",
+        "use_cache": true
+    },
+    "icons": [
+        {
+            "src": "https://cdn.jsdelivr.net/gh/bitmox/malay@main/proco.jpg",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "https://cdn.jsdelivr.net/gh/bitmox/malay@main/proco.jpg",
+            "sizes": "256x256",
+            "type": "image/png"
+        }	
+    ]
+}
