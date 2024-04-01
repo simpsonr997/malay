@@ -1,4 +1,4 @@
-var _enableMultiTag		= false;
+			var _enableMultiTag		= true;
 			var _enableAds			= false;
 			var _forceEnableAds		= false;
 			var _enableVast			= false;			
@@ -8,12 +8,12 @@ var _enableMultiTag		= false;
 			var _vastMinCounter		= 60;
 			var _vastCounter		= 0;						
 			var playerInstance 		= jwplayer("player");
-			if(location.hostname == '/'){
-				_enableMultiTag = false;
+			if(location.hostname == 'sport.duktek.onlinex'){
+				_enableMultiTag = true;
 				_enableAds		= false;
 			} else {
 				_enableMultiTag = false;
-				_enableAds		= false;
+				_enableAds		= true;
 			}
 			$('#sports_tv_container').scroll(function(i){			
 				var _scrollTop = $('#sports_tv_container').scrollTop();
