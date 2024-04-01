@@ -174,15 +174,8 @@
 				playerInstance = null;
 				playerInstance = jwplayer("player");
 			
-				
-				/* Change 2 */
-				if(_jsonData.jenis == 'iframe'){
-					playerInstance 			= null;
-					var _frameUrl			= _jsonData.url_iptv;						
-					var _embedHtml 			= '<iframe id="shaka_player_iframe" width="100%" height="100%" src="'+_frameUrl+'&amp;controls=0" title="Duktek Sports - Duktek TV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-					$('#embed_youtube').html(_embedHtml);							
-					$('#embed_youtube').show();
-					
+
+
 				if(_jsonData.jenis == 'hls'){		
 					playerInstance.setup({
 						playlist: [{
@@ -252,6 +245,12 @@
 						}, 5000);
 						
 					});
+				} else if(_jsonData.jenis == 'iframe'){
+					playerInstance 			= null;
+					var _frameUrl			= _jsonData.url_iptv;						
+					var _embedHtml 			= '<iframe id="shaka_player_iframe" width="100%" height="100%" src="'+_frameUrl+'&amp;controls=0" title="Duktek Sports - Duktek TV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+					$('#embed_youtube').html(_embedHtml);							
+					$('#embed_youtube').show();	
 				} else if(_jsonData.jenis == 'dash-clearkey'){
 					var _key = _jsonData.url_license.split(':');
 					playerInstance.setup({        
