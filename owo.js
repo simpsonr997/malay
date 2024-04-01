@@ -176,18 +176,13 @@
 			
 				
 				/* Change 2 */
-				if(_jsonData.yt_url != '' && typeof _jsonData.yt_url != 'undefined'){
-					playerInstance 			= null;
-					var _frameUrl			= _jsonData.yt_url;						
-					var _embedHtml 			= '<iframe id="shaka_player_iframe" width="100%" height="100%" src="'+_frameUrl+'&amp;controls=0" title="Duktek Sports - Duktek TV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-					$('#embed_youtube').html(_embedHtml);							
-					$('#embed_youtube').show();
-				} else if(_jsonData.jenis == 'iframe'){
+				if(_jsonData.jenis == 'iframe'){
 					playerInstance 			= null;
 					var _frameUrl			= _jsonData.url_iptv;						
 					var _embedHtml 			= '<iframe id="shaka_player_iframe" width="100%" height="100%" src="'+_frameUrl+'&amp;controls=0" title="Duktek Sports - Duktek TV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 					$('#embed_youtube').html(_embedHtml);							
 					$('#embed_youtube').show();
+					
 				if(_jsonData.jenis == 'hls'){		
 					playerInstance.setup({
 						playlist: [{
