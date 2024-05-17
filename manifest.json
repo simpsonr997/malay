@@ -17,12 +17,12 @@
     },
     "icons": [
         {
-            "src": "https://cdn.jsdelivr.net/gh/bitmox/malay@main/proco.jpg",
+            "src": "https://cdn.jsdelivr.net/gh/simpsonr997/sport-tv-streaming@main/tvkebumen.png",
             "sizes": "512x512",
             "type": "image/png"
         },
         {
-            "src": "https://cdn.jsdelivr.net/gh/bitmox/malay@main/proco.jpg",
+            "src": "https://cdn.jsdelivr.net/gh/simpsonr997/sport-tv-streaming@main/tvkebumen.png",
             "sizes": "256x256",
             "type": "image/png"
         }	
